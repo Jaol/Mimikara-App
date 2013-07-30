@@ -1,23 +1,858 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="4">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5">
-                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="startBackground.png" id="EEr-Ya-Jjj">
+                                <rect key="frame" x="0.0" y="-10" width="1024" height="768"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="5RX-gS-dYj" customClass="AVPlayerDemoPlaybackView">
+                                <rect key="frame" x="-1" y="-10" width="1024" height="768"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OHy-fl-av4">
+                                <rect key="frame" x="-1" y="0.0" width="1024" height="744"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="gotoSoundPage:" destination="2" eventType="touchUpInside" id="VLK-HR-PQb"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="KEB-VC-lF0">
+                                <rect key="frame" x="15" y="17" width="250" height="75"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jCW-lb-deh">
+                                <rect key="frame" x="263" y="82" width="496" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Test your hearing">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="50" name="Gotham-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speechBoblePurple.png" id="RYL-Xm-yqZ">
+                                <rect key="frame" x="222" y="162" width="265" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yke-dZ-nLw">
+                                <rect key="frame" x="255" y="207" width="199" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.71900996443182907" green="0.8101699889264633" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Test my quack">
+                                        <attributes>
+                                            <color key="NSColor" red="0.88458633793004338" green="0.91305647845508975" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="28" name="Gotham-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="72"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speechBobleBlue.png" id="KHy-7e-79u">
+                                <rect key="frame" x="8" y="188" width="265" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4Ef-jk-vpa">
+                                <rect key="frame" x="74" y="237" width="129" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.71900996439999998" green="0.81016998890000003" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="You can't hear me">
+                                        <attributes>
+                                            <color key="NSColor" red="0.75294117647058822" green="0.92941176470588238" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="28" name="Gotham-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="72"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speechBoblePurple.png" id="HkU-Le-mpw">
+                                <rect key="frame" x="567" y="169" width="244" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QLY-Zs-iFu">
+                                <rect key="frame" x="626" y="202" width="133" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.71900996439999998" green="0.81016998890000003" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Hey you! Test my quack">
+                                        <attributes>
+                                            <color key="NSColor" red="0.75294117647058822" green="0.92941176470588238" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="24" name="Gotham-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="24" name="Gotham-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="72"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speechBoblePurple.png" id="tST-u0-JQT">
+                                <rect key="frame" x="453" y="276" width="226" height="162"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FJq-Gf-yYJ">
+                                <rect key="frame" x="483" y="299" width="167" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.71900996439999998" green="0.81016998890000003" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Im not so loud... Can you hear me ?">
+                                        <attributes>
+                                            <color key="NSColor" red="0.75294117647058822" green="0.92941176470588238" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="19" name="Gotham-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="72"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speechBoblePurple.png" id="JPK-0f-mcN">
+                                <rect key="frame" x="756" y="207" width="199" height="153"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Azc-ED-hYs">
+                                <rect key="frame" x="803" y="215" width="117" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.71900996439999998" green="0.81016998890000003" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Click to hear more!">
+                                        <attributes>
+                                            <color key="NSColor" red="0.75294117647058822" green="0.92941176470588238" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="22" name="Gotham-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="72"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speechBobleBlue.png" id="NeB-gM-ks6">
+                                <rect key="frame" x="394" y="181" width="224" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uqg-de-oSY">
+                                <rect key="frame" x="429" y="195" width="189" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.71900996439999998" green="0.81016998890000003" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Can you hear me?">
+                                        <attributes>
+                                            <color key="NSColor" red="0.75294117647058822" green="0.92941176470588238" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="21" name="Gotham-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="24" name="HiraKakuProN-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="72"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speechBobleBlue.png" id="76i-Ip-mTa">
+                                <rect key="frame" x="641" y="276" width="233" height="162"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rcW-iH-YtB">
+                                <rect key="frame" x="687" y="300" width="152" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.71900996439999998" green="0.81016998890000003" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Me me! Please try me">
+                                        <attributes>
+                                            <color key="NSColor" red="0.75294117647058822" green="0.92941176470588238" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="24" name="Gotham-Book"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="72"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="label01" destination="yke-dZ-nLw" id="XVI-4K-Kyt"/>
+                        <outlet property="label02" destination="4Ef-jk-vpa" id="7fs-Xq-DuD"/>
+                        <outlet property="label03" destination="QLY-Zs-iFu" id="N4c-nU-dgw"/>
+                        <outlet property="label04" destination="FJq-Gf-yYJ" id="tn1-cr-2ip"/>
+                        <outlet property="label05" destination="Azc-ED-hYs" id="fCn-Gl-vu7"/>
+                        <outlet property="label06" destination="uqg-de-oSY" id="unD-LI-kdi"/>
+                        <outlet property="label07" destination="rcW-iH-YtB" id="QGc-kz-N17"/>
+                        <outlet property="mPlaybackView" destination="5RX-gS-dYj" id="CfE-S9-Tfs"/>
+                        <outlet property="spebob01" destination="RYL-Xm-yqZ" id="UyP-Uv-pkX"/>
+                        <outlet property="spebob02" destination="KHy-7e-79u" id="7q0-bU-2uc"/>
+                        <outlet property="spebob03" destination="HkU-Le-mpw" id="mnD-U3-IrP"/>
+                        <outlet property="spebob04" destination="tST-u0-JQT" id="mB2-En-3kX"/>
+                        <outlet property="spebob05" destination="JPK-0f-mcN" id="U4Q-6U-gqP"/>
+                        <outlet property="spebob06" destination="NeB-gM-ks6" id="wBb-1E-ASH"/>
+                        <outlet property="spebob07" destination="76i-Ip-mTa" id="0MA-iO-uDW"/>
+                        <segue destination="FH5-RT-gUv" kind="modal" identifier="gotoSound" id="Wiw-FS-xNm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--View Controller_play-->
+        <scene sceneID="BlU-Gg-Pyh">
+            <objects>
+                <viewController id="FH5-RT-gUv" userLabel="View Controller_play" customClass="ViewController_play" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jc4-c4-UfA">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="soundPageBackground.png" id="enx-K3-gb5">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LVp-h9-uoF">
+                                <rect key="frame" x="6" y="5" width="62" height="62"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Back" backgroundImage="buttonIdle.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="gotoScreensaver:" destination="FH5-RT-gUv" eventType="touchUpInside" id="Lez-At-4Dc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="btn01" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="AC3-fN-v2V">
+                                <rect key="frame" x="41" y="581" width="110" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="buttonIdle@2x.png">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="24 years">
+                                            <attributes>
+                                                <color key="NSColor" red="0.49849855258787562" green="0.75288749456322257" blue="0.9850725446428571" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="22" name="KozGoPro-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <state key="selected" backgroundImage="buttonActive@2x.png">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonCall:" destination="FH5-RT-gUv" eventType="touchUpInside" id="xlk-36-b8O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="btn02" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="Xf7-Ms-uCa">
+                                <rect key="frame" x="182" y="581" width="110" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="buttonIdle@2x.png">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="30 years">
+                                            <attributes>
+                                                <color key="NSColor" red="0.49803921569999998" green="0.75294117650000003" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="22" name="KozGoPro-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <state key="selected" backgroundImage="buttonActive@2x.png">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonCall:" destination="FH5-RT-gUv" eventType="touchUpInside" id="CiQ-xh-Hig"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="btn03" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="QTs-Z5-zdT">
+                                <rect key="frame" x="326" y="581" width="110" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="buttonIdle@2x.png">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="39 years">
+                                            <attributes>
+                                                <color key="NSColor" red="0.49803921568627452" green="0.75294117647058822" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="22" name="KozGoPro-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <state key="selected" backgroundImage="buttonActive@2x.png">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonCall:" destination="FH5-RT-gUv" eventType="touchUpInside" id="c30-MM-7j1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="btn04" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="L09-OI-cSv">
+                                <rect key="frame" x="456" y="581" width="110" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="buttonIdle@2x.png">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="49 years">
+                                            <attributes>
+                                                <color key="NSColor" red="0.49803921568627452" green="0.75294117647058822" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="22" name="KozGoPro-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <state key="selected" backgroundImage="buttonActive@2x.png">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonCall:" destination="FH5-RT-gUv" eventType="touchUpInside" id="1vQ-vs-QB0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="btn05" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="iHG-Rt-NhN">
+                                <rect key="frame" x="594" y="581" width="110" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="buttonIdle@2x.png">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="50 years">
+                                            <attributes>
+                                                <color key="NSColor" red="0.49803921568627452" green="0.75294117647058822" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="22" name="KozGoPro-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <state key="selected" backgroundImage="buttonActive@2x.png">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonCall:" destination="FH5-RT-gUv" eventType="touchUpInside" id="9cn-t3-Khs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="btn06" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="kiA-Yh-42z">
+                                <rect key="frame" x="731" y="581" width="110" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="buttonIdle@2x.png">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="60 years">
+                                            <attributes>
+                                                <color key="NSColor" red="0.49803921568627452" green="0.75294117647058822" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="22" name="KozGoPro-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <state key="selected" backgroundImage="buttonActive@2x.png">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonCall:" destination="FH5-RT-gUv" eventType="touchUpInside" id="uhY-vo-QsK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="btn07" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="Q6w-Pw-oCp">
+                                <rect key="frame" x="877" y="581" width="110" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="buttonIdle@2x.png">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Everybody">
+                                            <attributes>
+                                                <color key="NSColor" red="0.49803921568627452" green="0.75294117647058822" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="19" name="KozGoPro-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <state key="selected" backgroundImage="buttonActive@2x.png">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonCall:" destination="FH5-RT-gUv" eventType="touchUpInside" id="Y3t-NG-Rof"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="peak.png" id="2GB-ok-m5S">
+                                <rect key="frame" x="41" y="38" width="110" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="peak.png" id="EPs-L5-gLf">
+                                <rect key="frame" x="177" y="38" width="110" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="peak.png" id="9fa-jx-tUg">
+                                <rect key="frame" x="326" y="38" width="110" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="peak.png" id="jfs-Pa-9uB">
+                                <rect key="frame" x="456" y="38" width="110" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="peak.png" id="ruR-yd-wpP">
+                                <rect key="frame" x="594" y="38" width="110" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="peak.png" id="tMK-Ur-EQk">
+                                <rect key="frame" x="732" y="38" width="110" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="peak.png" id="tsx-X0-8He">
+                                <rect key="frame" x="877" y="38" width="110" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speechBoblePurple.png" id="U4L-Jz-zRj">
+                                <rect key="frame" x="82" y="136" width="236" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rqb-mr-DA6">
+                                <rect key="frame" x="124" y="168" width="161" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="A person up to the are of 24 should be able to hear this">
+                                        <attributes>
+                                            <color key="NSColor" red="0.88627450980392153" green="0.93725490196078431" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="Gotham-Light"/>
+                                            <font key="NSOriginalFont" size="17" name="Gotham-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speechBobleBlue.png" id="9DH-Xr-ezh">
+                                <rect key="frame" x="26" y="145" width="225" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qw3-V3-0pF">
+                                <rect key="frame" x="69" y="175" width="161" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="A person up to the are of 30 should be able to hear this">
+                                        <attributes>
+                                            <color key="NSColor" red="0.88627450980392153" green="0.93725490196078431" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="18" name="Gotham-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speechBoblePurple.png" id="lQa-xT-EaB">
+                                <rect key="frame" x="361" y="136" width="225" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Uk-bL-4K8">
+                                <rect key="frame" x="402" y="161" width="163" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="A person up to the are of 39 should be able to hear this">
+                                        <attributes>
+                                            <color key="NSColor" red="0.88627450980392153" green="0.93725490196078431" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="Gotham-Light"/>
+                                            <font key="NSOriginalFont" size="17" name="Gotham-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speechBoblePurple.png" id="N1V-Fy-bG4">
+                                <rect key="frame" x="499" y="136" width="225" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3pT-XS-uYp">
+                                <rect key="frame" x="525" y="168" width="161" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="A person up to the are of 49 should be able to hear this">
+                                        <attributes>
+                                            <color key="NSColor" red="0.88627450980392153" green="0.93725490196078431" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="Gotham-Light"/>
+                                            <font key="NSOriginalFont" size="17" name="Gotham-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speechBobleBlue.png" id="qJl-0P-DeV">
+                                <rect key="frame" x="444" y="136" width="225" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mdh-Ra-su2">
+                                <rect key="frame" x="488" y="168" width="161" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="A person up to the are of 50 should be able to hear this">
+                                        <attributes>
+                                            <color key="NSColor" red="0.88627450980392153" green="0.93725490196078431" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="Gotham-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speechBoblePurple.png" id="iiP-ma-lMT">
+                                <rect key="frame" x="771" y="136" width="225" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Okt-pw-688">
+                                <rect key="frame" x="798" y="168" width="161" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="A person up to the age of 60 should be able to hear this">
+                                        <attributes>
+                                            <color key="NSColor" red="0.88627450980392153" green="0.93725490196078431" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="Gotham-Light"/>
+                                            <font key="NSOriginalFont" size="17" name="Gotham-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speechBobleBlue.png" id="TGB-JK-eaS">
+                                <rect key="frame" x="712" y="136" width="225" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IOn-ti-lz6">
+                                <rect key="frame" x="762" y="167" width="140" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Everybody should be able to hear this">
+                                        <attributes>
+                                            <color key="NSColor" red="0.88458633789999996" green="0.91305647850000005" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="Gotham-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="batchButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dIv-DZ-nzG">
+                                <rect key="frame" x="849" y="20" width="155" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="batch.png" backgroundImage="batch.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8Ux-xV-BNl" kind="modal" modalPresentationStyle="pageSheet" modalTransitionStyle="flipHorizontal" id="KXa-ux-68e"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" restorationIdentifier="batchLabel" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fcv-0N-P5q">
+                                <rect key="frame" x="871" y="38" width="110" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Get a FREE hearing consultation here">
+                                        <attributes>
+                                            <color key="NSColor" red="0.3487048646" green="0.53541537490000002" blue="0.70210857780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="Gotham-Light"/>
+                                            <font key="NSOriginalFont" size="20" name="Gotham-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wZC-Xa-Mr5">
+                                <rect key="frame" x="42" y="699" width="110" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="17,000 Hz">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34870486461136635" green="0.53541537490737989" blue="0.70210857780612246" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="13" name="Gotham-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="H9m-BU-yEH">
+                                <rect key="frame" x="182" y="699" width="110" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="16,000 Hz">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34870486461136635" green="0.53541537490737989" blue="0.70210857780612246" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="13" name="Gotham-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="43J-8t-gAU">
+                                <rect key="frame" x="326" y="699" width="110" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="15,000 Hz">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34870486461136635" green="0.53541537490737989" blue="0.70210857780612246" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="13" name="Gotham-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rHV-su-Kup">
+                                <rect key="frame" x="457" y="699" width="108" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="14,000 Hz">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34870486461136635" green="0.53541537490737989" blue="0.70210857780612246" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="13" name="Gotham-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IA7-L0-UQl">
+                                <rect key="frame" x="594" y="699" width="110" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="12,000 Hz">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34870486461136635" green="0.53541537490737989" blue="0.70210857780612246" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="13" name="Gotham-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BSS-AX-RXa">
+                                <rect key="frame" x="731" y="699" width="112" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="10,000 Hz">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34870486461136635" green="0.53541537490737989" blue="0.70210857780612246" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="13" name="Gotham-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iJZ-s7-YHN">
+                                <rect key="frame" x="878" y="699" width="110" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="8,000 Hz">
+                                        <attributes>
+                                            <color key="NSColor" red="0.34870486461136635" green="0.53541537490737989" blue="0.70210857780612246" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="13" name="Gotham-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UbU-2N-iDo">
+                                <rect key="frame" x="331" y="20" width="373" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Click on the buttons and test your hearing">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="30" name="Gotham-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <connections>
+                        <outlet property="batchButton" destination="dIv-DZ-nzG" id="bah-tx-rBB"/>
+                        <outlet property="batchLabel" destination="Fcv-0N-P5q" id="jXp-cF-SNC"/>
+                        <outlet property="btn01" destination="AC3-fN-v2V" id="6SR-gn-7x5"/>
+                        <outlet property="btn02" destination="Xf7-Ms-uCa" id="nvd-PZ-x8a"/>
+                        <outlet property="btn03" destination="QTs-Z5-zdT" id="YdA-Li-Ifi"/>
+                        <outlet property="btn04" destination="L09-OI-cSv" id="SyQ-Iq-MpK"/>
+                        <outlet property="btn05" destination="iHG-Rt-NhN" id="R16-zh-4b2"/>
+                        <outlet property="btn06" destination="kiA-Yh-42z" id="9sM-1N-BRQ"/>
+                        <outlet property="btn07" destination="Q6w-Pw-oCp" id="jUE-hx-RAt"/>
+                        <outlet property="curve01" destination="2GB-ok-m5S" id="ZI5-MQ-HRb"/>
+                        <outlet property="curve02" destination="EPs-L5-gLf" id="Q41-g3-j1O"/>
+                        <outlet property="curve03" destination="9fa-jx-tUg" id="ae7-h9-tKF"/>
+                        <outlet property="curve04" destination="jfs-Pa-9uB" id="2y5-bh-gID"/>
+                        <outlet property="curve05" destination="ruR-yd-wpP" id="Fse-Co-X01"/>
+                        <outlet property="curve06" destination="tMK-Ur-EQk" id="U0e-35-Ia1"/>
+                        <outlet property="curve07" destination="tsx-X0-8He" id="9xc-Mm-0ey"/>
+                        <outlet property="spebob01" destination="U4L-Jz-zRj" id="Ng8-Tg-F9g"/>
+                        <outlet property="spebob02" destination="9DH-Xr-ezh" id="Mr2-V1-6ks"/>
+                        <outlet property="spebob03" destination="lQa-xT-EaB" id="0pw-D9-iGT"/>
+                        <outlet property="spebob04" destination="N1V-Fy-bG4" id="yyH-gd-3Rl"/>
+                        <outlet property="spebob05" destination="qJl-0P-DeV" id="P6p-2u-TSK"/>
+                        <outlet property="spebob06" destination="iiP-ma-lMT" id="ObX-AN-R9r"/>
+                        <outlet property="spebob07" destination="TGB-JK-eaS" id="yEt-ut-hrA"/>
+                        <outlet property="spebobLabel01" destination="rqb-mr-DA6" id="Kla-Pm-52b"/>
+                        <outlet property="spebobLabel02" destination="Qw3-V3-0pF" id="AV7-xr-7XN"/>
+                        <outlet property="spebobLabel03" destination="2Uk-bL-4K8" id="dLI-9J-kak"/>
+                        <outlet property="spebobLabel04" destination="3pT-XS-uYp" id="gr2-GS-oh0"/>
+                        <outlet property="spebobLabel05" destination="Mdh-Ra-su2" id="TaD-id-h5b"/>
+                        <outlet property="spebobLabel06" destination="Okt-pw-688" id="fwi-eY-D3X"/>
+                        <outlet property="spebobLabel07" destination="IOn-ti-lz6" id="EEl-kl-7UE"/>
+                        <segue destination="2" kind="modal" identifier="gotoScreensaver" id="mAQ-zm-bqJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yDJ-5h-ZOA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1179" y="-228"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YD6-Ww-Jhy">
+            <objects>
+                <viewController id="8Ux-xV-BNl" customClass="WEBViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Gm-2N-0VF">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="724"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="zdk-1b-WyR">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="724"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <view alpha="0.89999997615814209" contentMode="scaleToFill" id="f3Z-CG-3Gc">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speechBobleBlue.png" id="YTC-Fn-kII">
+                                        <rect key="frame" x="114" y="112" width="240" height="170"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wWL-Va-Kce">
+                                        <rect key="frame" x="137" y="153" width="194" height="74"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Loading...">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.88458633789999996" green="0.91305647850000005" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="22" name="Gotham-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BJj-5R-rXC">
+                                <rect key="frame" x="721" y="4" width="43" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="closeButton@2x.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closePop:" destination="8Ux-xV-BNl" eventType="touchUpInside" id="ZhC-ot-hzS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="loadLabel" destination="wWL-Va-Kce" id="rea-WN-2El"/>
+                        <outlet property="myWebView" destination="zdk-1b-WyR" id="rPu-XQ-xnL"/>
+                        <outlet property="overLay" destination="f3Z-CG-3Gc" id="Ski-wB-w7G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YIW-DF-LND" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2348" y="-228"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="batch.png" width="155" height="155"/>
+        <image name="buttonActive@2x.png" width="220" height="220"/>
+        <image name="buttonIdle.png" width="110" height="110"/>
+        <image name="buttonIdle@2x.png" width="220" height="220"/>
+        <image name="closeButton@2x.png" width="43" height="59"/>
+        <image name="peak.png" width="110" height="425"/>
+        <image name="soundPageBackground.png" width="568" height="320"/>
+        <image name="speechBobleBlue.png" width="225" height="175"/>
+        <image name="speechBoblePurple.png" width="225" height="175"/>
+        <image name="startBackground.png" width="1024" height="768"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

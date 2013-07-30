@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#import "Flurry/Flurry.h"
+#import <SystemConfiguration/SystemConfiguration.h>
+#import "TestFlight.h"
+#import "ViewController.h"
+#import "WEBViewController.h"
+//@class AVPlayerDemoPlaybackView;
+@interface AppDelegate : UIResponder <UIApplicationDelegate>{
+ UIWindow *window;
+ ViewController *viewController;
+}
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (nonatomic, retain) IBOutlet ViewController *viewController;
 @end

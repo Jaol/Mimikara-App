@@ -9,10 +9,26 @@
 #import "AppDelegate.h"
 
 @implementation AppDelegate
-
+@synthesize viewController;
+@synthesize window;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    
+    // start of your application:didFinishLaunchingWithOptions
+    
+    // !!!: Use the next line only during beta
+    // [TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];
+    
+    [TestFlight takeOff:@"055e12e5-da16-4a48-b844-96a3e6147845"];
+    // The rest of your application:didFinishLaunchingWithOptions method
+    // ...
+    
+    [Flurry startSession:@"QPSHRWZYW7HVZF4Z93JY"];
     // Override point for customization after application launch.
+    
+
+    
     return YES;
 }
 							
@@ -31,11 +47,12 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+       // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
