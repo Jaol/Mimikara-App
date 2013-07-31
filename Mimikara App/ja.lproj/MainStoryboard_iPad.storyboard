@@ -119,14 +119,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FJq-Gf-yYJ">
-                                <rect key="frame" x="484" y="301" width="176" height="96"/>
+                                <rect key="frame" x="484" y="301" width="157" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.71900996439999998" green="0.81016998890000003" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="小さい音聞き取れる？">
+                                    <fragment content="この音聞き取れる？">
                                         <attributes>
                                             <color key="NSColor" red="0.75294117647058822" green="0.92941176470588238" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="24" name="HiraKakuProN-W3"/>
+                                            <font key="NSFont" size="22" name="HiraKakuProN-W3"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="72"/>
                                         </attributes>
@@ -596,8 +596,8 @@
                                 <rect key="frame" x="712" y="136" width="225" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IOn-ti-lz6">
-                                <rect key="frame" x="738" y="159" width="172" height="89"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IOn-ti-lz6">
+                                <rect key="frame" x="738" y="159" width="166" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
@@ -631,15 +631,51 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" restorationIdentifier="batchLabel" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fcv-0N-P5q">
                                 <rect key="frame" x="866" y="38" width="122" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="聞こえの無料相談はこちら">
+                                    <fragment content="聞こえの">
                                         <attributes>
-                                            <color key="NSColor" red="0.3487048646" green="0.53541537490000002" blue="0.70210857780000002" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="22" name="KozGoPro-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
+                                            <color key="NSColor" red="0.0" green="0.109803915" blue="0.2215686291" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="HiraKakuProN-W3"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="72"/>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.109803915" blue="0.2215686291" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="72"/>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="相談ができる">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.109803915" blue="0.2215686291" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="HiraKakuProN-W3"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="72"/>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.109803915" blue="0.2215686291" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="LucidaGrande"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="72"/>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="お店を探す">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.109803915" blue="0.2215686291" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="HiraKakuProN-W3"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="72"/>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>

@@ -420,17 +420,16 @@
                                             <constraint firstAttribute="height" constant="82" id="eQj-eq-JtT"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="68" translatesAutoresizingMaskIntoConstraints="NO" id="Uko-o9-I6h">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="79" translatesAutoresizingMaskIntoConstraints="NO" id="Uko-o9-I6h">
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="69" id="Rm3-QU-DNC"/>
-                                            <constraint firstAttribute="width" constant="68" id="fmC-fm-70H"/>
                                         </constraints>
                                         <attributedString key="attributedText">
                                             <fragment content="すべての年齢で聞こえるはずだよ">
                                                 <attributes>
                                                     <color key="NSColor" red="0.88627450980392153" green="0.9137254901960784" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="12" name="KozGoPro-Regular"/>
+                                                    <font key="NSFont" size="10" name="KozGoPro-Regular"/>
                                                     <real key="NSKern" value="0.0"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="72"/>
                                                 </attributes>
@@ -809,17 +808,17 @@
                                             <constraint firstAttribute="height" constant="99" id="uKq-Vj-MZA"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="116" translatesAutoresizingMaskIntoConstraints="NO" id="f7g-pj-b6o">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="105" translatesAutoresizingMaskIntoConstraints="NO" id="f7g-pj-b6o">
                                         <color key="backgroundColor" red="0.71900996439999998" green="0.81016998890000003" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="116" id="BB6-Mb-IDH"/>
+                                            <constraint firstAttribute="width" constant="105" id="IWN-bc-Rao"/>
                                             <constraint firstAttribute="height" constant="27" id="qRG-2O-LD0"/>
                                         </constraints>
                                         <attributedString key="attributedText">
                                             <fragment content="この音聞き取れる？">
                                                 <attributes>
                                                     <color key="NSColor" red="0.88627450980392153" green="0.9137254901960784" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="14" name="KozGoPro-Regular"/>
+                                                    <font key="NSFont" size="12" name="KozGoPro-Regular"/>
                                                     <real key="NSKern" value="0.0"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="72"/>
                                                 </attributes>
@@ -1009,6 +1008,7 @@
                                     <constraint firstItem="ZmI-bU-AMK" firstAttribute="leading" secondItem="f7g-pj-b6o" secondAttribute="leading" type="default" id="EvP-3a-Yco"/>
                                     <constraint firstItem="ARK-R2-dPE" firstAttribute="centerX" secondItem="yCr-7P-fzC" secondAttribute="centerX" type="default" id="GfO-5K-vVq"/>
                                     <constraint firstItem="I52-gM-KhW" firstAttribute="leading" secondItem="jfu-hh-F8x" secondAttribute="leading" type="default" id="JIy-yH-keT"/>
+                                    <constraint firstItem="1mG-jl-Qu8" firstAttribute="trailing" secondItem="IJD-vN-T4f" secondAttribute="trailing" type="default" id="JXk-IJ-jEJ"/>
                                     <constraint firstItem="ppi-70-G3V" firstAttribute="centerX" secondItem="sga-Md-qFy" secondAttribute="centerX" type="default" id="KJg-tx-ZM2"/>
                                     <constraint firstItem="I52-gM-KhW" firstAttribute="centerX" secondItem="MHd-Xt-Jk7" secondAttribute="centerX" type="default" id="LaQ-MA-AII"/>
                                     <constraint firstItem="ARK-R2-dPE" firstAttribute="leading" secondItem="IJD-vN-T4f" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Pbz-8O-Tjh"/>
@@ -1025,7 +1025,6 @@
                                     <constraint firstItem="I52-gM-KhW" firstAttribute="centerY" secondItem="sga-Md-qFy" secondAttribute="centerY" type="default" id="fMv-Ij-eOx"/>
                                     <constraint firstItem="1mG-jl-Qu8" firstAttribute="top" secondItem="yCr-7P-fzC" secondAttribute="top" constant="136" id="heC-o7-INl"/>
                                     <constraint firstItem="ZmI-bU-AMK" firstAttribute="trailing" secondItem="yCr-7P-fzC" secondAttribute="trailing" type="default" id="hk5-NO-eL4"/>
-                                    <constraint firstItem="sga-Md-qFy" firstAttribute="centerX" secondItem="1mG-jl-Qu8" secondAttribute="centerX" type="default" id="l1z-MH-FVk"/>
                                     <constraint firstItem="49y-Nd-7PX" firstAttribute="top" secondItem="yCr-7P-fzC" secondAttribute="top" constant="10" id="lBu-vP-DEa"/>
                                     <constraint firstItem="ppi-70-G3V" firstAttribute="top" secondItem="yCr-7P-fzC" secondAttribute="top" constant="71" id="nXd-OH-41e"/>
                                     <constraint firstItem="bK1-aT-3nn" firstAttribute="centerX" secondItem="BX4-xx-p0P" secondAttribute="centerX" type="default" id="ni1-SM-k80"/>
@@ -1098,6 +1097,81 @@
         <image name="speechBoblePurple.png" width="225" height="175"/>
         <image name="startBackground_iPhone@2x.png" width="1136" height="640"/>
     </resources>
+    <classes>
+        <class className="AVPlayerDemoPlaybackView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AVPlayerDemoPlaybackView.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="gotoSoundPage:"/>
+                <relationship kind="outlet" name="label01" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="label02" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="label03" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="label04" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="label05" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="label06" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="label07" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mPlaybackView" candidateClass="AVPlayerDemoPlaybackView"/>
+                <relationship kind="outlet" name="spebob01" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="spebob02" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="spebob03" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="spebob04" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="spebob05" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="spebob06" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="spebob07" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="ViewController_play" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController_play.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonCall:"/>
+                <relationship kind="action" name="gotoScreensaver:"/>
+                <relationship kind="outlet" name="batchButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="batchLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="btn01" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btn02" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btn03" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btn04" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btn05" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btn06" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btn07" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="curve01" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="curve02" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="curve03" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="curve04" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="curve05" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="curve06" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="curve07" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="spebob01" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="spebob02" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="spebob03" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="spebob04" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="spebob05" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="spebob06" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="spebob07" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="spebobLabel01" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="spebobLabel02" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="spebobLabel03" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="spebobLabel04" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="spebobLabel05" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="spebobLabel06" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="spebobLabel07" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="WEBViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WEBViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="closePop:"/>
+                <relationship kind="outlet" name="loadLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="myWebView" candidateClass="UIWebView"/>
+                <relationship kind="outlet" name="overLay" candidateClass="UIView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
