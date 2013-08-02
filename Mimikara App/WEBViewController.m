@@ -48,6 +48,9 @@ if([deviceType isEqualToString:@"iPad"]|| [deviceType isEqualToString:@"iPad Sim
     NSURL *url = [NSURL URLWithString:fullURL];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     myWebView.delegate = self;
+    
+    myWebView.scalesPageToFit=YES; 
+    
     [myWebView loadRequest:requestObj];
    
 

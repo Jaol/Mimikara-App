@@ -13,6 +13,9 @@
 @end
 
 @implementation ViewController_play
+@synthesize containerView;
+
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -40,8 +43,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.batchButton.alpha = 0;
-    self.batchLabel.alpha = 0.0;
+    //self.batchButton.alpha = 0;
+    // self.batchLabel.alpha = 0.0;
     [self hideCurves];
     
     
@@ -49,39 +52,39 @@
    
     if([deviceType isEqualToString:@"iPhone"] || [deviceType isEqualToString:@"iPhone Simulator"])
     {
-        animationView1 = [[PNGAnimationView alloc] initWithFrame:CGRectMake(10, 90, 80,130) fileNamePattern:@"Singleduck1_%@.png" startFrame:0 totalFrame:49 interval:0.04];
-        [animationView1 setIsLoop:NO];
-        [self.view addSubview:animationView1];
+        animationView1 = [[PNGAnimationView alloc] initWithFrame:CGRectMake(-5, 90, 80,130) fileNamePattern:@"Singleduck1_%@.png" startFrame:0 totalFrame:49 interval:0.04];
+        [animationView1 setIsLoop:YES];
+        [self.containerView addSubview:animationView1];
         [animationView1 playAnimation];
         
-        animationView1 = [[PNGAnimationView alloc] initWithFrame:CGRectMake(70, 92, 80, 130) fileNamePattern:@"Singleduck2_0000_%@.png" startFrame:0 totalFrame:49 interval:0.04];
-        [animationView1 setIsLoop:NO];
-        [self.view addSubview:animationView1];
+        animationView1 = [[PNGAnimationView alloc] initWithFrame:CGRectMake(55, 92, 80, 130) fileNamePattern:@"Singleduck2_0000_%@.png" startFrame:0 totalFrame:49 interval:0.04];
+        [animationView1 setIsLoop:YES];
+        [self.containerView addSubview:animationView1];
         [animationView1 playAnimation];
         
-        animationView1 = [[PNGAnimationView alloc] initWithFrame:CGRectMake(145, 105, 65, 115) fileNamePattern:@"Singleduck6_%@.png" startFrame:0 totalFrame:49 interval:0.04];
-        [animationView1 setIsLoop:NO];
-        [self.view addSubview:animationView1];
+        animationView1 = [[PNGAnimationView alloc] initWithFrame:CGRectMake(130, 105, 65, 115) fileNamePattern:@"Singleduck6_%@.png" startFrame:0 totalFrame:49 interval:0.04];
+        [animationView1 setIsLoop:YES];
+        [self.containerView addSubview:animationView1];
         [animationView1 playAnimation];
         
-        animationView1 = [[PNGAnimationView alloc] initWithFrame:CGRectMake(205, 100,  75, 125) fileNamePattern:@"Singleduck7_%@.png" startFrame:0 totalFrame:49 interval:0.04];
-        [animationView1 setIsLoop:NO];
-        [self.view addSubview:animationView1];
+        animationView1 = [[PNGAnimationView alloc] initWithFrame:CGRectMake(190, 100,  75, 125) fileNamePattern:@"Singleduck7_%@.png" startFrame:0 totalFrame:49 interval:0.04];
+        [animationView1 setIsLoop:YES];
+        [self.containerView addSubview:animationView1];
         [animationView1 playAnimation];
         
-        animationView1 = [[PNGAnimationView alloc] initWithFrame:CGRectMake(263, 90, 80, 130) fileNamePattern:@"Singleduck5_0000_%@.png" startFrame:0 totalFrame:49 interval:0.04];
-        [animationView1 setIsLoop:NO];
-        [self.view addSubview:animationView1];
+        animationView1 = [[PNGAnimationView alloc] initWithFrame:CGRectMake(252, 90, 80, 130) fileNamePattern:@"Singleduck5_0000_%@.png" startFrame:0 totalFrame:49 interval:0.04];
+        [animationView1 setIsLoop:YES];
+        [self.containerView addSubview:animationView1];
         [animationView1 playAnimation];
         
-        animationView1 = [[PNGAnimationView alloc] initWithFrame:CGRectMake(333, 100,  70, 125) fileNamePattern:@"Singleduck3_%@.png" startFrame:0 totalFrame:49 interval:0.04];
-        [animationView1 setIsLoop:NO];
-        [self.view addSubview:animationView1];
+        animationView1 = [[PNGAnimationView alloc] initWithFrame:CGRectMake(322, 100,  70, 125) fileNamePattern:@"Singleduck3_%@.png" startFrame:0 totalFrame:49 interval:0.04];
+        [animationView1 setIsLoop:YES];
+        [self.containerView addSubview:animationView1];
         [animationView1 playAnimation];
         
-        animationView1 = [[PNGAnimationView alloc] initWithFrame:CGRectMake(390, 85, 85, 135) fileNamePattern:@"Singleduck4_0000_%@.png" startFrame:0 totalFrame:49 interval:0.04];
-        [animationView1 setIsLoop:NO];
-        [self.view addSubview:animationView1];
+        animationView1 = [[PNGAnimationView alloc] initWithFrame:CGRectMake(375, 85, 85, 135) fileNamePattern:@"Singleduck4_0000_%@.png" startFrame:0 totalFrame:49 interval:0.04];
+        [animationView1 setIsLoop:YES];
+        [self.containerView addSubview:animationView1];
         [animationView1 playAnimation];
 
     }else
@@ -89,37 +92,37 @@
         {
            
             animationView1 = [[PNGAnimationView alloc] initWithFrame:CGRectMake(0, 230, 200, 350) fileNamePattern:@"Singleduck1_%@.png" startFrame:0 totalFrame:49 interval:0.04];
-            [animationView1 setIsLoop:NO];
+            [animationView1 setIsLoop:YES];
             [self.view addSubview:animationView1];
             [animationView1 playAnimation];
             
             animationView1 = [[PNGAnimationView alloc] initWithFrame:CGRectMake(125, 235, 200, 350) fileNamePattern:@"Singleduck2_0000_%@.png" startFrame:0 totalFrame:49 interval:0.04];
-            [animationView1 setIsLoop:NO];
+            [animationView1 setIsLoop:YES];
             [self.view addSubview:animationView1];
             [animationView1 playAnimation];
             
             animationView1 = [[PNGAnimationView alloc] initWithFrame:CGRectMake(280, 270, 180, 330) fileNamePattern:@"Singleduck3_%@.png" startFrame:0 totalFrame:49 interval:0.04];
-            [animationView1 setIsLoop:NO];
+            [animationView1 setIsLoop:YES];
             [self.view addSubview:animationView1];
             [animationView1 playAnimation];
             
             animationView1 = [[PNGAnimationView alloc] initWithFrame:CGRectMake(435, 285, 150, 300) fileNamePattern:@"Singleduck7_%@.png" startFrame:0 totalFrame:49 interval:0.04];
-            [animationView1 setIsLoop:NO];
+            [animationView1 setIsLoop:YES];
             [self.view addSubview:animationView1];
             [animationView1 playAnimation];
             
             animationView1 = [[PNGAnimationView alloc] initWithFrame:CGRectMake(540, 235, 200, 350) fileNamePattern:@"Singleduck5_0000_%@.png" startFrame:0 totalFrame:49 interval:0.04];
-            [animationView1 setIsLoop:NO];
+            [animationView1 setIsLoop:YES];
             [self.view addSubview:animationView1];
             [animationView1 playAnimation];
             
             animationView1 = [[PNGAnimationView alloc] initWithFrame:CGRectMake(720, 275, 150, 300) fileNamePattern:@"Singleduck6_%@.png" startFrame:0 totalFrame:49 interval:0.04];
-            [animationView1 setIsLoop:NO];
+            [animationView1 setIsLoop:YES];
             [self.view addSubview:animationView1];
             [animationView1 playAnimation];
             
             animationView1 = [[PNGAnimationView alloc] initWithFrame:CGRectMake(835, 235, 200, 350) fileNamePattern:@"Singleduck4_0000_%@.png" startFrame:0 totalFrame:49 interval:0.04];
-            [animationView1 setIsLoop:NO];
+            [animationView1 setIsLoop:YES];
             [self.view addSubview:animationView1];
             [animationView1 playAnimation];
 
@@ -130,8 +133,8 @@
 
 -(void)hideGFX:(NSNotification*) notif{
    
-self.batchButton.alpha = 0.0;
-    self.batchLabel.alpha = 0.0;
+//self.batchButton.alpha = 0.0;
+  //  self.batchLabel.alpha = 0.0;
 }
 
 - (void) showBatch:(NSNotification *) notif
@@ -228,9 +231,9 @@ self.batchButton.alpha = 0.0;
 
 - (void) flipButton:(UIButton*) button {
     if(button.selected)
-        [button setSelected:YES];
-    else
         [button setSelected:NO];
+    else
+        [button setSelected:YES];
     
 }
 
@@ -240,8 +243,8 @@ self.batchButton.alpha = 0.0;
     if(self.batchButton.alpha >= 1){
         onlyOnce2 = 0;
          [UIView animateWithDuration:.6 animations:^{
-        self.batchButton.alpha = 0.0;
-             self.batchLabel.alpha = 0.0;
+             //self.batchButton.alpha = 0.0;
+            // self.batchLabel.alpha = 0.0;
          }];
     }
     [(ELCUIApplication *)[UIApplication sharedApplication] resetIdleTimer];

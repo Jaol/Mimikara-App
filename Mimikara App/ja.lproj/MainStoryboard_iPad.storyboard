@@ -416,35 +416,35 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="peak.png" id="2GB-ok-m5S">
-                                <rect key="frame" x="41" y="38" width="110" height="500"/>
+                                <rect key="frame" x="14" y="25" width="160" height="500"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="peak.png" id="EPs-L5-gLf">
-                                <rect key="frame" x="177" y="38" width="110" height="500"/>
+                                <rect key="frame" x="150" y="25" width="160" height="500"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="peak.png" id="9fa-jx-tUg">
-                                <rect key="frame" x="317" y="38" width="110" height="500"/>
+                                <rect key="frame" x="290" y="25" width="160" height="500"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="peak.png" id="jfs-Pa-9uB">
-                                <rect key="frame" x="456" y="38" width="110" height="500"/>
+                                <rect key="frame" x="429" y="25" width="160" height="500"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="peak.png" id="ruR-yd-wpP">
-                                <rect key="frame" x="594" y="38" width="110" height="500"/>
+                                <rect key="frame" x="567" y="25" width="160" height="500"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="peak.png" id="tMK-Ur-EQk">
-                                <rect key="frame" x="732" y="38" width="110" height="500"/>
+                                <rect key="frame" x="705" y="25" width="160" height="500"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="peak.png" id="tsx-X0-8He">
-                                <rect key="frame" x="877" y="38" width="110" height="500"/>
+                                <rect key="frame" x="850" y="25" width="160" height="500"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speechBoblePurple.png" id="U4L-Jz-zRj">
-                                <rect key="frame" x="82" y="136" width="236" height="155"/>
+                                <rect key="frame" x="92" y="136" width="213" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rqb-mr-DA6">
@@ -597,7 +597,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IOn-ti-lz6">
-                                <rect key="frame" x="738" y="159" width="166" height="89"/>
+                                <rect key="frame" x="751" y="159" width="166" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
@@ -638,7 +638,7 @@
                                             <color key="NSColor" red="0.0" green="0.109803915" blue="0.2215686291" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="20" name="HiraKakuProN-W3"/>
                                             <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="72"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="72"/>
                                             <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                         </attributes>
                                     </fragment>
@@ -647,7 +647,7 @@
                                             <color key="NSColor" red="0.0" green="0.109803915" blue="0.2215686291" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="20" name="LucidaGrande"/>
                                             <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="72"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="72"/>
                                             <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                         </attributes>
                                     </fragment>
@@ -656,7 +656,7 @@
                                             <color key="NSColor" red="0.0" green="0.109803915" blue="0.2215686291" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="20" name="HiraKakuProN-W3"/>
                                             <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="72"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="72"/>
                                             <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                         </attributes>
                                     </fragment>
@@ -665,7 +665,7 @@
                                             <color key="NSColor" red="0.0" green="0.109803915" blue="0.2215686291" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="20" name="LucidaGrande"/>
                                             <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="72"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="72"/>
                                             <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                         </attributes>
                                     </fragment>
@@ -674,7 +674,7 @@
                                             <color key="NSColor" red="0.0" green="0.109803915" blue="0.2215686291" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="20" name="HiraKakuProN-W3"/>
                                             <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="72"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="72"/>
                                             <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                         </attributes>
                                     </fragment>
@@ -960,6 +960,7 @@
                 <relationship kind="outlet" name="btn05" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="btn06" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="btn07" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="containerView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="curve01" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="curve02" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="curve03" candidateClass="UIImageView"/>

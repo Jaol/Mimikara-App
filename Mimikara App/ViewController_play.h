@@ -21,6 +21,7 @@
      UIButton *currentlySelectedButton;
     
     
+    
     IBOutlet UIImageView *curve01;
     IBOutlet UIImageView *curve02;
     IBOutlet UIImageView *curve03;
@@ -52,6 +53,7 @@
     int *result;
 
 }
+@property (strong, nonatomic) IBOutlet UIView *containerView;
 
 - (IBAction)buttonCall:(id)sender;
 
